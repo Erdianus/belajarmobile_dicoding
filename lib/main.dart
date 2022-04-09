@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: DetailScreen());
+        home: Gambar());
   }
 }
 
@@ -23,5 +23,38 @@ class DetailScreen extends StatelessWidget {
       children: [Text('Farming House Lembang'), Text('Tes'), Text('Percobaan')],
     ));
   }
-} 
+}
+
+class Gambar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: ListView(
+      children: [
+        Column(
+          children: [
+            Container(
+              width: 200,
+              height: 250,
+              margin: EdgeInsets.only(bottom: 14),
+              color: Colors.black,
+            ),
+            Container(
+              width: 200,
+              height: 250,
+              margin: EdgeInsets.only(bottom: 14),
+              color: Colors.blueAccent,
+            ),
+            Container(
+              width: 200,
+              height: 250,
+              margin: EdgeInsets.only(bottom: 14),
+              color: Colors.deepPurpleAccent,
+            )
+          ],
+        )
+      ],
+    ));
+  }
+}
 //ini percobaan
